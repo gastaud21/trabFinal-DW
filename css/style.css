@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #171718;
+}
+
+/*HEADER*/
+nav {
+  padding: 1.125rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #26292d;
+}
+@media (min-width: 768px) {
+  nav {
+    padding: 1.125rem 8.875rem;
+  }
+}
+nav div {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav div {
+    display: flex;
+    gap: 23px;
+  }
+  nav div a {
+    padding: 0.5rem 0;
+  }
+  nav div a:hover {
+    border-bottom: solid 1px #5c62ec;
+    padding-bottom: calc(0.5rem - 1px);
+  }
+}
+nav button {
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  nav button {
+    display: none;
+  }
+}
+
+/*MAIN*/
+/*Informações básicas*/
+main {
+  padding: 4.5rem 0 4rem 0;
+}
+@media (min-width: 8rem) {
+  main {
+    padding: 8rem 0 0 0;
+  }
+}
+
+#infoBasics h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+  height: 156px;
+}
+@media (min-width: 768px) {
+  #infoBasics h1 {
+    height: 178px;
+    font-size: 3.75rem;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    line-height: 71px;
+  }
+}
+#infoBasics h1 span {
+  color: #5c62ec;
+}
+
+@media (min-width: 768px) {
+  #my-info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+.button__solid {
+  display: block;
+  background-color: #5c62ec;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  margin: 0 auto 1rem auto;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .button__solid {
+    margin: 23.95px 0 0 0;
+    padding: 1rem 0.96875rem;
+  }
+}
+
+.button__outlined {
+  display: block;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .button__outlined {
+    margin: 23.95px 0 0 0;
+    padding: 0.875rem 1.25rem;
+  }
+}
+
+/*Sobre mim*/
+#sobreMim {
+  margin: 7.75rem 1rem 0 1rem;
+  padding: 1rem;
+  background-color: #1c1e22;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  #sobreMim {
+    margin: 9.6875rem auto 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    max-width: 967px;
+    gap: 2rem;
+  }
+}
+#sobreMim h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1.5rem 0 1rem 0;
+}
+@media (min-width: 768px) {
+  #sobreMim h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57px;
+  }
+}
+#sobreMim p {
+  line-height: 1.75rem;
+  letter-spacing: 0.44px;
+}
+#sobreMim img {
+  width: 100%;
+  border-radius: 8px;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  #sobreMim img {
+    width: 326.33px;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+  }
+}
+#sobreMim button {
+  margin-top: 1rem;
+  display: inline;
+}
+#sobreMim button img {
+  margin-left: 1.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/*FOOTER*/
+footer {
+  padding: 0 1rem 1rem 1rem;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 0 0 63px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer section {
+  border-top: 1px solid #26292d;
+  border-bottom: 1px solid #26292d;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0 3rem 0;
+}
+@media (min-width: 768px) {
+  footer section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8.0625rem;
+    padding: 4rem 0;
+    width: 83.5vw;
+  }
+}
+footer section button {
+  background-color: transparent;
+  border: none;
+}
+footer section img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  footer section div {
+    align-items: flex-start;
+  }
+}
+footer p {
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  footer p {
+    width: 83.5vw;
+    text-align: start;
+  }
+}
+
+.linkColored {
+  color: #85bfd1;
+  font-weight: 500;
+}
+
+.linkWhite {
+  font-size: 0.875rem;
+}/*# sourceMappingURL=style.css.map */
