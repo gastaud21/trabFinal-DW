@@ -42,7 +42,7 @@ nav {
     padding: 1.125rem 8.875rem;
   }
 
-  div {
+  #menu {
     display: none;
     @media (min-width: 768px) {
       display: flex;
@@ -64,6 +64,42 @@ nav {
     border: none;
     @media (min-width: 768px) {
       display: none;
+    }
+  }
+}
+
+/*Burguer menu*/
+
+dialog {
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  background-color: $bg-color-body;
+  border: none;
+
+  div {
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.125rem 1rem;
+    margin-bottom: 1.281rem;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li {
+      margin: 0.5rem 1rem;
     }
   }
 }

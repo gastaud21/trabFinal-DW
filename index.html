@@ -16,15 +16,31 @@
     <header>
       <nav>
         <img src="./svgs/Logo.svg" />
-        <div>
+        <div id="menu">
           <a>Início</a>
           <a>Sobre mim</a>
           <a>Contato</a>
         </div>
-        <button class="burguer-button">
+        <button class="burguer-button" id="burguer-button">
           <img src="./svgs/menu-alt-3.svg" alt="Menu Burguer" />
         </button>
       </nav>
+      <dialog>
+        <div>
+          <img src="./svgs/Logo.svg" alt="logo" />
+          <button id="closeBurguer">
+            <img
+              src="./svgs/closeBurguer.svg"
+              alt="Button to close menu burguer"
+            />
+          </button>
+        </div>
+        <ul>
+          <li><a>Início</a></li>
+          <li><a>Sobre mim</a></li>
+          <li><a>Contato</a></li>
+        </ul>
+      </dialog>
     </header>
     <main>
       <section id="infoBasics">
@@ -81,5 +97,18 @@
       </section>
       <p>© 2021 Otterwise</p>
     </footer>
+    <script>
+      const buttonOpen = document.getElementById("burguer-button");
+      const burguerMenu = document.querySelector("dialog");
+
+      buttonOpen.onclick = () => {
+        burguerMenu.showModal();
+      };
+
+      const buttonClose = document.getElementById("closeBurguer");
+      buttonClose.onclick = () => {
+        burguerMenu.close();
+      };
+    </script>
   </body>
 </html>
